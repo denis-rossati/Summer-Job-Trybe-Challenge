@@ -3,3 +3,11 @@
 Foi proposto um desafio na segunda etapa do processo seletivo do Summer Job da Trybe. A meta é criar um conteúdo no estilo da Trybe sobre Promises.
 <hr>
 Eu não pretendo mostrar o repositório, e sim enviar por e-mail. Mas subi pro Github pra usar o code climate, visto que é um dos critérios de avaliação.
+
+Até agora foram produzidos:
+
+- [x]  O que vamos aprender?
+- [x]  Por que isso é importante?
+- [ ] Conteúdo Principal
+- [ ] Exercícios
+- [ ] Recursos adicionais
