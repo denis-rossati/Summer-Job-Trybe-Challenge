@@ -8,6 +8,6 @@ Até agora foram produzidos:
 
 - [x]  O que vamos aprender?
 - [x]  Por que isso é importante?
-- [ ] Conteúdo Principal
+- [x] Conteúdo Principal
 - [ ] Exercícios
 - [ ] Recursos adicionais
