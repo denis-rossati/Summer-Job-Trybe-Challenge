@@ -423,11 +423,13 @@ Note também que usamos uma arrow function dessa vez. Fizemos isso para que voc�
 
 Por fim, tente tirar o await da nossa callback, ou seja, faremos com que nossa função seja impaciente e não esperará o retorno do API. O que acha que irá acontecer? Teste você mesmo...
 
-### Finalizção
+### Finalização e fixação
 
 Ufa, quanta coisa, né? Se você ficou meio confuso e acha que não vai conseguir, não se estresse. Essa é uma caminhada longa, você não precisa decorar tudo de cabeça. Vá atrás de outros materias, veja os recursos adicionais e mais importante de tudo: não tenha medo de perguntar. Não se preocupe pois com a prática você irá sentir mais e mais que escrever promises vai ficar mais natural pro seu cérebro e pro seus dedos. Na pior das hipóteses você apenas terá que consultar a documentação e isso não é vergonha alguma. Todo tipo de pessoa desenvolvedora faz isso, desde o Júnior ao Senior.
 
-Agora vamos pros exercícios!!
+Para solidificar tudo que aprendemos, porque não fazemos uma quiz? Assim que terminar você pode ir aos exercícios onde colocaremos tudo em prática.
+
+Você pode acessar o Quiz por [aqui.](https://forms.gle/GRBxzcRoznQkCdvj7) Boa sorte.
 
 ---
 
