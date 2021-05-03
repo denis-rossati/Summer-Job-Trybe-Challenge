@@ -14,5 +14,7 @@ Até agora foram produzidos:
 - [x] Exercícios de fixação.
 - [x] Exercícios.
 - [ ] Recursos adicionais.
-- [ ] Correção Ortográfica.
+- [x] Correção dos exercícios.
 - [ ] Correção Markdown.
+- [ ] Correção Ortográfica.
+- [ ] Vídeos de correção dos exercícios.
