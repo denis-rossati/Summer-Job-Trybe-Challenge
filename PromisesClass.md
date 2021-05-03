@@ -204,7 +204,7 @@ mostrarEncadeamento()
 
 Se você estiver atento, talvez notou que agora nós começamos a adicionar *return* antes das resoluções. Fazemos isso porque, apesar do resolve e reject funcionarem como returns, eles não interrompem o restante da função de ser executada (diferente dos returns padrões). A diferença em exemplos ilustrativos como os do nosso estudo é microscópica, mas em aplicações maiores isso pode significar um atraso na execução. Então já comece a criar o hábito de colocar returns antes dos resolves e rejects.
 
-Bem, você entendeu que o then manipula a informação retornada pelo resolve. Temos que também avisar que o primeiro parâmetro dos thens conseguintes, por padrão, sempre será o retorno da função anterior. Esse exemplo tem objetivo de mostrar melhor essa funcionalidade: 
+Bem, você entendeu que o then manipula a informação retornada pelo resolve. Temos que também avisar que o primeiro parâmetro dos thens conseguintes, por padrão, sempre será o retorno da função anterior. Esse exemplo tem objetivo de mostrar melhor essa funcionalidade:
 
 ```javascript
 function mostrarEncadeamento() {
@@ -285,7 +285,7 @@ O Fetch é um dos recursos que temos quando se trata de funções assíncronas e
 
 #### .JSON()
 
-Grande parte das API's nos dão uma resposta em um formato que não é legível ao Javascript. Então assim que ela é retornada nós temos que converter a response para algo que a linguagem possa ler antes de saírmos manipulando coisas por ai. 
+Grande parte das API's nos dão uma resposta em um formato que não é legível ao Javascript. Então assim que ela é retornada nós temos que converter a response para algo que a linguagem possa ler antes de saírmos manipulando coisas por ai.
 
 Na nossa situação, o mais útil para nós é o .JSON (isto é **JavaScript Object Notation**... Sim, é como se fosse um objeto), com ele fica mais fácil para nosso interpretador de código visualizar as informações que estão lá. Veremos como fazer isso quando consumirmos nossa API mais à frente.
 
@@ -437,7 +437,47 @@ Você pode acessar o Quiz por [aqui.](https://forms.gle/GRBxzcRoznQkCdvj7) Boa s
 
 ### Agora, a prática
 
+Agora que você está se familiarizando com Promises, que tal começarmos a fazer uso delas? Abra seu VS Code porque vamos consumir uma API.
+
+1 - O primeiro exercício será sobre o básico das Promises. O desafio é atribuir à Promise a responsabilidade de adivinhar se um número aleatório que lhe darmos por parâmetro é o mesmo que o que a Promise aceita. Basicamente é como se fosse um sorteio.
+
+- Utillize esse código como base para você fazer suas operações:
+
+```javascript
+function guessTheNumber() {
+  return new Promise((resolve, reject) => {
+    // Seu código vai aqui.
+  })
+}
+
+guessTheNumber()
+```
+
+- Dentro da função, crie uma variável que vai receber um número inteiro aleatório entre 1 e 10.
+
+- Crie a lógica da Promise que irá ditar que será exibida a mensagem 'Parabéns, acertou o número em cheio!!!' caso o número aleatório gerado seja 5.
+
+- Crie também a lógica que exiba a mensagem 'Não foi dessa vez...' caso o número não seja compatível com o gerado.
+
+2 - Abra seu VSCode e installe os módulos do Node que lhe permitem usar a função fetch.
+
+- Não tem problema caso você precise de voltar ao conteúdo para checar como é. Faz parte do processo.
+
+- Vamos consumir essa API: [boredapi.com/api/activity](https://www.boredapi.com/api/activity). Abra o URL e dê uma olhada em como o retorno dela é. Essa é uma API que nos sugere atividades para realizarmos.
+
+- Com o node-modules já instalado, instancie sua primeira Promise, dentro dela iremos fazer nossas operações com o resolve e reject.
+
+- Utilize o resolve para retornar o valor da API, lembre-se que a comunicação com os serviços web é responsabilidade do fetch.
+
+- Após isso, utilize um dos métodos que você aprendeu para acessar o valor retornado da API para que seja imprimido no console apenas a chave 'activity'.
+
+- Só para não perdermos o costume, adicione um reject e um catch para tratarmos eventuais erros. Não se esqueça das boas práticas ensinadas.
+
 ### Bônus
+
+Até agora trabalhamos com Promises, para não deixar o restante do conhecimento abandona, porque não tentamos realizar o exercício 2 mas dessa vez com async e await?
+
+Caso se sinta a vontade, tente procurar por outras API's, tem muita coisa divertida pra ser usar nelas. Nós recomendamos procurar usar alguma [deste site](https://apipheny.io/free-api/), pois não necessitam de autenticação ou chave. Mas claro que seria um conhecimento a mais se você buscasse consumir uma que peça.
 
 ---
 
