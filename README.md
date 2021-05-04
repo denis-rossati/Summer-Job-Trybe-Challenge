@@ -13,7 +13,7 @@ Até agora foram produzidos:
 - [x] Conteúdo Principal.
 - [x] Exercícios de fixação.
 - [x] Exercícios.
-- [ ] Recursos adicionais.
+- [x] Recursos adicionais.
 - [x] Correção dos exercícios.
 - [x] Correção Markdown.
 - [x] Correção Ortográfica.

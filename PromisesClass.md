@@ -142,7 +142,11 @@ Vamos voltar ao exemplo do restaurante... Você fez seu pedido. Mas enquanto ele
 
 Chega de ilustrações. Vamos para as definições técnicas.
 
-Uma promessa possui três estados: *resolve*, *reject* e *pending*. Já sabemos o que os dois primeiros fazem, e acabamos de ter uma idéia do que o terceiro é. Vamos dar uma olhada em como isso rola em código bruto:
+Uma promessa possui três estados: *resolved*, *rejected* e *pending*. Já sabemos o que os dois primeiros fazem, e acabamos de ter uma idéia do que o terceiro é.
+
+Pelo propósito breve da aula, usaremos *resolved* em vez do nome *fulFilled*, nos recurso adicionais tem um link sobre isso.
+
+ Vamos dar uma olhada em como isso rola em código bruto:
 
 ```javascript
 function projeto(porcentagem) {
@@ -506,8 +510,50 @@ Caso se sinta a vontade, tente procurar por outras API's, tem muita coisa divert
 
 ## Recursos adicionais
 
-Caso sinta necessidade de aprofundar em mais algum assunto, recomendamos esses links:
+Caso sinta necessidade de aprofundar em algum assunto, recomendamos esses links:
 
-- 
+- Links em português:
+
+  - Promises:
+
+    - [Entendendo Promises de uma vez por todas](https://medium.com/trainingcenter/entendendo-promises-de-uma-vez-por-todas-32442ec725c2).
+
+    - [Usando Promises - O guia](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Using_promises).
+
+    - [W3Schools sobre Promises](https://www.w3schools.com/js/js_promise.asp).
+
+  - Gerenciadores de fluxo:
+
+    - [Promise.then()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise/then).
+
+    - [Promise.catch()](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch).
+
+  - Conceitos gerais da aula:
+
+    - [Tutorial sobre arquivos json](https://www.devmedia.com.br/json-tutorial/25275).
+
+    - [O que é API e para que serve?](https://blog.mastertech.com.br/tecnologia/o-que-e-api-e-para-que-serve-dentro-da-programacao/).
+
+    - [Conceitos básicos sobre fetch](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Basic_concepts).
+
+- Links em inglês:
+
+  - Promises:
+
+    - [O que são Promises?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261).
+
+    - [Básico sobre promises](https://javascript.info/promise-basics).
+
+  - Gerenciadores de fluxo:
+
+    - [Catch/Then vs. Async/Await](https://www.smashingmagazine.com/2020/11/comparison-async-await-versus-then-catch/).
+
+  - Conceitos gerais da aula:
+
+    - [Json, um melhor formato para intercâmbio de informações](https://www.infoworld.com/article/3222851/what-is-json-a-better-format-for-data-exchange.html).
+
+    - [Um vídeo sobre API](https://www.youtube.com/watch?v=Yzx7ihtCGBs).
+
+    - [Artigo sobre Fetch API](https://www.javascripttutorial.net/javascript-fetch-api/#:~:text=Fetch%20API%20demo.-,Summary,text()%20or%20json()%20.).
 
 ---
