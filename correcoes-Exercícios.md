@@ -1,6 +1,6 @@
 # Correções
 
-## Exercício 1
+## Exercício 1.
 
 O Exercício pediu que criássemos uma espécie de sorteio, usando rejects e resolves. Em seguida nos forneceu o seguinte código:
 
