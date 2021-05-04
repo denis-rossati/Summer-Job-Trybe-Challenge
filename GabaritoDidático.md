@@ -83,11 +83,7 @@ guessTheNumber()
 .catch(error => console.error(error))
 ```
 
-E pronto, está finalizado. Caso não tenha conseguido entender, veja o vídeo abaixo onde o passo a passo é mais visível:
-
-***VIDEO***
-
-E se ainda não ficou claro, por favor, reforce os estudos a respeito de Promises.
+E pronto, está finalizado. E se ainda não ficou claro, por favor, reforce os estudos a respeito de Promises.
 
 ## Exercício 2
 
