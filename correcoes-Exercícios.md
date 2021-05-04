@@ -1,8 +1,8 @@
 # Correções
 
-## Exercício 1.
+## Exercício 1
 
-O Exercício pediu que criássemos uma espécie de sorteio, usando rejects e resolves. Em seguida nos forneceu o seguinte código:
+O Exercício pediu que criássemos uma espécie de sorteio, usando *rejects* e *resolves*. E em seguida nos forneceu o seguinte código:
 
 ```javascript
 function guessTheNumber() {
@@ -14,7 +14,7 @@ function guessTheNumber() {
 guessTheNumber()
 ```
 
-Para começar, vamos fazer com que nossa função crie um número aleatório cada vez que ela for chamada. Vamos inserir ele numa variável. Usaremos a função *Math.random* para gerar esse número aleatório e depois multiplica-lo por 10, indicando que queremos que o número que queremos estará entre 0 e 10. Depois disso, inserimos isso tudo em parênteses para que essa operação seja executada antes de transformarmos o número em inteiro, que é responsabilidade da função Parseint, o código até agora ficará assim:
+Para começar, vamos fazer com que nossa função crie um número aleatório a cada vez que ela for chamada. Vamos inserir esse número numa variável. Usaremos a função *Math.random*, que gera esse número aleatório e depois iremos multiplica-lo por 10, indicando que queremos que o número que vai surgir estará entre 0 e 10. Depois disso, vamos por isso tudo entre parênteses para que essa operação seja executada antes de transformarmos o número em inteiro, que é responsabilidade da função *parseInt*, até agora o código ficará assim:
 
 ```javascript
 function guessTheNumber() {
@@ -27,7 +27,7 @@ function guessTheNumber() {
 guessTheNumber()
 ```
 
-Agora, vamos construir a lógica para que o número que seja igual a 5 dispare alguma funcionalidade, no nosso caso, vamos fazer com que a resposta positiva chame uma mensagem de congratulações. Podemos resolver isso com um simples if:
+Agora, vamos construir a lógica para que alguma funcionalidade seja disparada caso o número que seja igual a 5, no nosso caso, vamos fazer com que a resposta positiva chame uma mensagem de congratulações. Podemos resolver isso com um simples *if*:
 
 ```javascript
 function guessTheNumber() {
@@ -43,7 +43,7 @@ function guessTheNumber() {
 guessTheNumber()
 ```
 
-Note que ainda não construímos a lógica para os casos negativos. Ou seja, em casos em que nosso número não é 5, queremos que haja uma rejeição que dispare uma frase. Portanto, usaremos o else e o reject:
+Note que ainda não construímos a lógica para os casos negativos. Ou seja, queremos que haja uma rejeição que dispare uma frase em casos onde nosso número não é 5. Portanto, usaremos o else e o reject:
 
 ```javascript
 function guessTheNumber() {
@@ -61,7 +61,7 @@ function guessTheNumber() {
 guessTheNumber()
 ```
 
-Até agora está quase completo, mas nossa função por si só não imprime nossas mensagens. Para lidar com as informações retornadas, vamos usar nossos gerenciadores de fluxos, usando o .then() para respostas positivas e *.catch()* para lidar com as negativas:
+Está quase completo, mas nossa função por si só não imprime nossas mensagens. Para lidar com as informações retornadas, vamos usar nossos gerenciadores de fluxos, o *.then()* para respostas positivas e *.catch()* para lidar com as negativas:
 
 ```javascript
 function guessTheNumber() {
@@ -83,21 +83,21 @@ guessTheNumber()
 
 E pronto, está finalizado. Caso não tenha conseguido entender, veja o vídeo abaixo onde o passo a passo é mais visível:
 
-VIDEO
+***VIDEO***
 
 E se ainda não ficou claro, por favor, reforce os estudos a respeito de Promises.
 
 ## Exercício 2
 
-Esse exercício dá um passo adiante, pedindo que a gente consuma uma API real que nos retorna sugestões de atividades e então imprimirmos o texto na saída do console.
+Esse exercício dá um passo adiante, pedindo que a gente consuma uma API real que nos retorna uma sugestão de atividade e então imprimirmos o texto na saída do console.
 
- Primeiro, instalamos os módulos node rodando esse comando no terminal:
+Primeiro, instalamos os módulos node rodando esse comando no terminal:
 
 `npm i node-fetch`
 
-O *npm* indica que estamos rodando um comando do Node Package Manager (não se preocupe em saber o que é isso agora, veremos muito a respeito dele ao longo do curso). O *i* é uma abreviação de 'install' e por fim, o *node-fetch* é a dependência que iremos instalar.
+O *npm* indica que estamos rodando um comando do Node Package Manager (não se preocupe em saber o que é isso agora, veremos muito a respeito dele ao longo do curso). O *i* é uma abreviação de 'install' e por fim, o *node-fetch* é a dependência que faremos download.
 
-Após isso, vamos importar a função fetch para nosso arquivo e já vamos criar a sintaxe básica de nossa Promise:
+Após isso, vamos importar a função fetch para nosso arquivo e já vamos criar a sintaxe básica de nossa *Promise*:
 
 ```javascript
 const fetch = require('node-fetch');
@@ -111,9 +111,9 @@ function imprimirTexto() {
 imprimirTexto()
 ```
 
-A primeira coisa que seria sensata a fazer, seria checar o retorno da nossa API para sabermos quais caminhos vamos tomar para conseguirmos ir até o valor que queremos, você pode fazer isso dando um console.log logo após a *resposta.json()* ou ir à documentação da API, os dois são válidos.
+A primeira coisa que seria sensata a se fazer seria checar o retorno da nossa API para sabermos quais caminhos vamos tomar para conseguirmos ir até o valor que queremos. Você pode fazer isso dando um *console.log* logo após a *resposta.json()* ou ir à documentação da API. As duas alternativas são válidas.
 
-O próximo passo é nos comunicarmos com nossa API, para isso vamos usar o fetch que nós já importamos:
+O próximo passo é nos comunicarmos com nossa API, para isso vamos usar o fetch que nós já importamos anteriormente:
 
 ```javascript
 const fetch = require('node-fetch');
@@ -127,7 +127,7 @@ function imprimirTexto() {
 imprimirTexto()
 ```
 
-Mas ele por si só não irá fazer nada, logo, vamos adicionar recursos para que possamos manipular o seu resultado. O que faremos é mandar ele para um *.then()* poder mexer nos seus resultados, e isso será possível embrulhando ele em um resolve:
+E agora vamos adicionar recursos para que possamos manipular o seu resultado. O que faremos é mandar ele para um *.then()* poder mexer nos seus resultados e isso será possível embrulhando ele em um *resolve*:
 
 ```javascript
 const fetch = require('node-fetch');
@@ -143,13 +143,13 @@ imprimirTexto()
 .then((data) => console.log(data.activity))
 ```
 
-Como podemos ver, nós permitimos que um *.then()* o transforme em um arquivo legível ao javascript com o *.json()* e então imprimimos a chave 'activity' no console. Outra forma válida seria inserir os dois *.then()* abaixo do *resolve*.
+Como pode-se ver, nós fizemos com que o primeiro *.then()* o transforme em um arquivo legível ao javascript com o *.json()* e então imprimimos a chave *activity* no console. Outra forma que nos levaria à nossa resposta seria inserir os dois *.then()* logo abaixo do *resolve*.
 
-Nos resta agora lidar com as exceções da regra, ou seja, caso nossa API retorne uma resposta inválida ou caso não consigamos nos comunicar com ela. Dessa forma:
-
-const fetch = require('node-fetch');
+Nos resta lidar com as exceções da regra, ou seja, caso nossa API retorne uma resposta inválida ou não consigamos nos comunicar com ela. Dessa forma:
 
 ```javascript
+const fetch = require('node-fetch');
+
 function imprimirTexto() {
   return new Promise((resolve, reject) => {
     return resolve(fetch('https://www.boredapi.com/api/activity'))
@@ -167,15 +167,15 @@ Retornamos um *new Error* pois é uma boa prática. Além de termos adicionado o
 
 Deu pra entender? Essa é a resolução final do exercício. Mas caso tenha ficado confuso, o vídeo aqui pode ajudar. Mas não se esqueça que você sempre pode tirar suas dúvidas com os instrutores da tribo. No mais, tente dar uma revisada no conteúdo proposto de hoje.
 
-VIDEO
+***VIDEO***
 
 ### Exercício Bônus
 
 Agora é a hora de resolver o bônus. Não precisa se assustar, pois não é nada complicado. Vamos dar uma olhada no que ele propõe...
 
-Ele pede para que dessa vez, a gente realize o exercício 2 usando async e await, conceitos aprendidos nessa aula, vamos lá?
+Ele pede para que dessa vez, a gente realize o exercício 2 usando *async* e *await*, conceitos aprendidos nessa aula, vamos lá?
 
-Primeiro de tudo, podemos apagar a promise, não vamos usar mais ela, certo? 
+Primeiro de tudo, podemos apagar a promise, não vamos usar mais ela, certo?
 
 Então definimos nossa função como assíncrona usando o *async* logo antes de definirmos ela, assim:
 
@@ -189,7 +189,7 @@ async function imprimirTexto() {
 imprimirTexto()
 ```
 
-Repare que não excluímos a importação do fetch, pois ainda será necessário. Vamos adiante, atribuindo uma varíavel à comunicação que vamos fazer com a API:
+Repare que não excluímos a importação do fetch pois ainda será necessário. Vamos adiante atribuindo uma varíavel à comunicação que vamos fazer com a API:
 
 ```javascript
 const fetch = require('node-fetch');
@@ -201,7 +201,7 @@ async function imprimirTexto() {
 imprimirTexto()
 ```
 
-Até agora simples, né? 
+Até agora simples, né?
 
 Dessa vez, vamos adicionar os gestores de fluxo bem na função. Vamos cuidar do *.then()* primeiro:
 
@@ -210,6 +210,7 @@ const fetch = require('node-fetch');
 
 async function imprimirTexto() {
   const APIResult = fetch('https://www.boredapi.com/api/activity');
+  // Aqui estamos chamando a variável e então adicionando o .then a ela.
   APIResult
   .then(response => response.json())
   .then(data => console.log(data.activity))
@@ -218,9 +219,9 @@ async function imprimirTexto() {
 imprimirTexto()
 ```
 
-Como de costume, convertemos a resposta para *.json* e então a informação *activity* foi imprimida no console.
+Como de costume, convertemos a resposta para *.json* e então a chave *activity* foi imprimida no console.
 
-Agora cuidemos do catch, okay?
+Agora cuidemos do *catch*, okay?
 
 ```javascript
 const fetch = require('node-fetch');
@@ -240,6 +241,6 @@ imprimirTexto()
 
 Como agora não podemos usar o resolve e então dar um console na resposta, utilizamos um *throw new Error* para lançar nossa mensagem de erro logo quando identificarmos ele.
 
-Também temos um vídeo mostrando passo a passo caso tenha ficado meio confuso:
+Também temos um vídeo mostrando passo a passo caso a resolução não tenha ficado nítida:
 
 VIDEO
