@@ -15,6 +15,5 @@ Até agora foram produzidos:
 - [x] Exercícios.
 - [ ] Recursos adicionais.
 - [x] Correção dos exercícios.
-- [ ] Correção Markdown.
-- [ ] Correção Ortográfica.
-- [ ] Vídeos de correção dos exercícios.
+- [x] Correção Markdown.
+- [x] Correção Ortográfica.

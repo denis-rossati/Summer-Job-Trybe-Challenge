@@ -1,4 +1,6 @@
-# Correções
+# Gabarito dos exercícios
+
+Há várias soluções para os exercícios propostos. Tentaremos manter a resolução simples para quem teve dificuldades em compreender os passos do exercício.
 
 ## Exercício 1
 
@@ -165,9 +167,7 @@ imprimirTexto()
 
 Retornamos um *new Error* pois é uma boa prática. Além de termos adicionado o *.catch()* para podermos visualizar o erro.
 
-Deu pra entender? Essa é a resolução final do exercício. Mas caso tenha ficado confuso, o vídeo aqui pode ajudar. Mas não se esqueça que você sempre pode tirar suas dúvidas com os instrutores da tribo. No mais, tente dar uma revisada no conteúdo proposto de hoje.
-
-***VIDEO***
+Deu pra entender? Essa é a resolução final do exercício. Não se esqueça que você sempre pode tirar suas dúvidas com os instrutores da tribo. Caso ainda tenha ficado confuso, tente dar uma revisada no conteúdo proposto de hoje.
 
 ### Exercício Bônus
 
@@ -241,6 +241,4 @@ imprimirTexto()
 
 Como agora não podemos usar o resolve e então dar um console na resposta, utilizamos um *throw new Error* para lançar nossa mensagem de erro logo quando identificarmos ele.
 
-Também temos um vídeo mostrando passo a passo caso a resolução não tenha ficado nítida:
-
-VIDEO
+Esperamos que tenha conseguido compreender todos os seus afazeres. Tire dúvidas, pesquise e reforce os estudos que os bons frutos com certeza chegarão. ;)
